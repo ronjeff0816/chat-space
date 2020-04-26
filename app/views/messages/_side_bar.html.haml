@@ -1,0 +1,23 @@
+.side-bar
+  .side-bar__user-name
+    .top-items
+      .top-items__name
+        Ron
+      .top-items__icon
+        = link_to "#", class: "top-items__icon--edit" do
+          %i.far.fa-edit
+        = link_to "#", class: "top-items__icon--cog" do
+          %i.fas.fa-cog
+  .side-bar__groups
+    %ul.group-lists
+      %li.group-lists__each
+        .group-lists__each--name
+          Group A
+        .group-lists__each--message
+          までメッセージがありません
+      %li.group-lists__each
+        .group-lists__each--name
+          Group B
+        .group-lists__each--message
+          までメッセージがありません
+
