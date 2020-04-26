@@ -6,21 +6,19 @@
   display: flex;
 }
 
-$button-color : #38aef0;
-
 
 
 .side-bar {
   width: 300px;
   height: 100vh;
-  background-color: #253141;
+  background-color: $SideBarColor;
   &__user-name {
     height: 100px;
     display: flex;
     align-items: center;
   }
   &__groups {
-    background-color: #2f3e51;
+    background-color: $SideGroupsColor;
     height: calc(100vh - 100px);
   }
 }
@@ -33,7 +31,7 @@ $button-color : #38aef0;
   justify-content: space-between;
   line-height: center;
   &__name {
-    color: white;
+    color: $SimpleColor;
   }
   &__icon {
     width: 60px;
@@ -42,16 +40,16 @@ $button-color : #38aef0;
     justify-content: flex-end;
     &--edit {
       margin-right: 5px;
-      color: white;
+      color: $SimpleColor;
     }
     &--cog {
-      color: white;
+      color: $SimpleColor;
     }
   }
 }
 
 .group-lists {
-  color: white;
+  color: $SimpleColor;
   padding-top: 20px;
   &__each {
     padding: 0 20px 40px 20px;
@@ -68,22 +66,22 @@ $button-color : #38aef0;
 
 
 .chat-main {
-  background-color: #ffffff;
+  background-color: $ChatMainColor;
   width: calc(100vw - 300px);
   height: 100vh;
   &__group-info {
     height: 99px;
-    border-bottom: solid 1px #eeeeee;
+    border-bottom: solid 1px $ChatBorderColor;
     display: flex;
     justify-content: space-between;
   }
   &__message-list {
-    background-color: #fafafa;
+    background-color: $MessageColor;
     height: calc(100vh - 190px);
     padding: 35px 0 0 40px;
   }
   &__message-form {
-    background-color: #d2d2d2;
+    background-color: $FormColor;
     height: 90px;
     padding: 20px 40px;
     display: flex;
@@ -94,12 +92,12 @@ $button-color : #38aef0;
   margin-left: 40px;
   &__group-name {
     margin-top: 35px;
-    color: #333333;
+    color: $GroupMainColor;
     font-size: 20px;
   }
   &__group-members {
     margin-top: 15px;
-    color: #999999;
+    color: $GroupSubColor;
     font-size: 12px;
   }
 }
@@ -108,14 +106,14 @@ $button-color : #38aef0;
   width: 70px;
   height: 38px;
   margin: 28px 28px 0 40px;
-  border: solid 1px $button-color;
+  border: solid 1px $BtnColor;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   &__text {
     font-size: 16px;
-    color: #38aef0;
+    color: $BtnColor;
   }
 }
 
@@ -124,18 +122,18 @@ $button-color : #38aef0;
   &__user {
     display: flex;
     &--name {
-      color: #333333;
+      color: $GroupMainColor;
       font-size: 16px;
       margin-bottom: 12px;
     }
     &--time {
-      color: #999999;
+      color: $GroupSubColor;
       font-size: 12px;
       margin-left: 8px;
     }
   }
   &__topic {
-    color: #434a54;
+    color: $TopicColor;
     font-size: 14px;
   }
 }
@@ -164,9 +162,9 @@ $button-color : #38aef0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $button-color;
+  background-color: $BtnColor;
   text-decoration: none;
   &__text {
-    color: white;
+    color: $SimpleColor;
   }
 }
