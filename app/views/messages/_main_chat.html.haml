@@ -1,0 +1,37 @@
+.chat-main
+  .chat-main__group-info
+    .left-content
+      .left-content__group-name
+        Group A
+      .left-content__group-members
+        Member: Ron
+    = link_to "#", class: "right-content" do
+      .right-content__text
+        Edit
+  .chat-main__message-list
+    %ul
+      %li.message-list
+        .message-list__user
+          .message-list__user--name
+            Ron
+          .message-list__user--time
+            2020/04/25(Sat) 15:00:00
+        .message-list__topic
+          おはよう！
+      %li.message-list
+        .message-list__user
+          .message-list__user--name
+            Ron
+          .message-list__user--time
+            2020/04/25(Sat) 15:00:14
+        .message-list__topic
+          元気？
+  .chat-main__message-form
+    .message-form
+      %input.message-form__type{:type => "textbox", :placeholder=> "type a message"}
+      %label.message-form__icon
+        = icon('fas','image') 
+        %input.message-form__file-btn{type: "file"}
+    = link_to "#", class: "send-btn" do
+      .send-btn__text
+        Send
