@@ -4,20 +4,17 @@
       .top-items__name
         = current_user.name
       .top-items__icon
-        = link_to "#", class: "top-items__icon--edit" do
+        = link_to new_group_path, class: "top-items__icon--edit" do
           %i.far.fa-edit
         = link_to edit_user_path(current_user), class: "top-items__icon--cog" do
           %i.fas.fa-cog
   .side-bar__groups
-    %ul.group-lists
-      %li.group-lists__each
-        .group-lists__each--name
-          Group A
-        .group-lists__each--message
-          までメッセージがありません
-      %li.group-lists__each
-        .group-lists__each--name
-          Group B
-        .group-lists__each--message
-          までメッセージがありません
+    - current_user.groups.each do |group|
+      .group-lists
+        .group-lists__each
+          = link_to edit_group_path(group), class: "group-lists__each--decor" do
+            .group-lists__each--name
+              = group.name
+            .group-lists__each--message
+              までメッセージがありません
 

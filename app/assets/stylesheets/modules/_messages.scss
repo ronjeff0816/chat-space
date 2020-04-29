@@ -49,16 +49,20 @@
 }
 
 .group-lists {
-  color: $SimpleColor;
   padding-top: 20px;
   &__each {
     padding: 0 20px 40px 20px;
+    &--decor {
+      text-decoration: none;
+    }
     &--name {
       font-size: 15px;
       margin-bottom: 5px;
+      color: $SimpleColor;
     }
     &--message {
       font-size: 11px;
+      color: $SimpleColor;
     }
   }
 }
