@@ -12,9 +12,9 @@
     - current_user.groups.each do |group|
       .group-lists
         .group-lists__each
-          = link_to edit_group_path(group), class: "group-lists__each--decor" do
+          = link_to group_messages_path(group), class: "group-lists__each--decor" do
             .group-lists__each--name
               = group.name
             .group-lists__each--message
-              までメッセージがありません
+              = group.show_last_message
 
