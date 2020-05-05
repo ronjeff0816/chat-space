@@ -83,6 +83,7 @@
     background-color: $MessageColor;
     height: calc(100vh - 190px);
     padding: 35px 0 0 40px;
+    overflow: scroll;
   }
   &__message-form {
     background-color: $FormColor;
