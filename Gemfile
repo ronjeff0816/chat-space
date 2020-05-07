@@ -72,10 +72,11 @@ gem 'rails-i18n', '~> 5.1'
 
 
 gem 'carrierwave'
-gem 'fog-aws'
 gem 'mini_magick'
 gem 'jquery-rails'
 
 group :production do
   gem 'unicorn', '5.4.1'
 end
+
+gem 'fog-aws'
